@@ -4,11 +4,15 @@ html
   head
     div.class
       header
-        container
-         title= title
-         link(rel='stylesheet', href='/stylesheets/style.css')
+        .container
+          .row
+            img(src="/images/portcullis.png")
+            title= title
+            link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .container
+      .row
+      block content
 
   footer
     .container
